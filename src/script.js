@@ -31,30 +31,30 @@ const parameterEnabled = key => {
 
 // PARAMETERS
 const asset_paths = {
-  model_bitcoin: "/media/testing/Crypto_Bitcoin/bitcoin.gltf",
-  model_dogecoin: "/media/testing/Crypto_Dogecoin/dogecoin.gltf",
-  model_ethereum: "/media/testing/Crypto_Ethereum/ethereum.gltf",
-  model_mario_coin: "/media/testing/mario_coin/coin.gltf",
+  model_bitcoin: "./media/testing/Crypto_Bitcoin/bitcoin.gltf",
+  model_dogecoin: "./media/testing/Crypto_Dogecoin/dogecoin.gltf",
+  model_ethereum: "./media/testing/Crypto_Ethereum/ethereum.gltf",
+  model_mario_coin: "./media/testing/mario_coin/coin.gltf",
 
-  hdri_urban_alley: "/media/dev/environment/urban_alley_01_2k.hdr",
-  hdri_chinese_garden: "/media/dev/environment/chinese_garden_2k.hdr",
+  hdri_urban_alley: "./media/dev/environment/urban_alley_01_2k.hdr",
+  hdri_chinese_garden: "./media/dev/environment/chinese_garden_2k.hdr",
 
-  background_digital: "/media/dev/backgrounds/digital_blue.jpg",
+  background_digital: "./media/dev/backgrounds/digital_blue.jpg",
 
-  image_fullscreen: "/media/dev/images/fullscreen.png",
-  image_resize: "/media/dev/images/resize.png",
-  image_sound_on: "/media/dev/images/sound.png",
-  image_sound_off: "/media/dev/images/sound-off.png",
-  image_auto_on: "/media/dev/images/hourglass.png",
-  image_auto_off: "/media/dev/images/hourglass-off.png",
-  image_gyro_on: "/media/dev/images/gyro.png",
-  image_gyro_off: "/media/dev/images/gyro-off.png",
+  image_fullscreen: "./media/dev/images/fullscreen.png",
+  image_resize: "./media/dev/images/resize.png",
+  image_sound_on: "./media/dev/images/sound.png",
+  image_sound_off: "./media/dev/images/sound-off.png",
+  image_auto_on: "./media/dev/images/hourglass.png",
+  image_auto_off: "./media/dev/images/hourglass-off.png",
+  image_gyro_on: "./media/dev/images/gyro.png",
+  image_gyro_off: "./media/dev/images/gyro-off.png",
 
-  image_bitcoin: "/media/dev/images/select/bitcoin.png",
-  image_dogecoin: "/media/dev/images/select/doge.png",
-  image_ethereum: "/media/dev/images/select/eth.png",
-  image_mario_coin: "/media/dev/images/select/mario.png",
-  image_roman_coin: "/media/dev/images/select/roman.png",
+  image_bitcoin: "./media/dev/images/select/bitcoin.png",
+  image_dogecoin: "./media/dev/images/select/doge.png",
+  image_ethereum: "./media/dev/images/select/eth.png",
+  image_mario_coin: "./media/dev/images/select/mario.png",
+  image_roman_coin: "./media/dev/images/select/roman.png",
 }
 
 const ENUM_LICENSE = {
