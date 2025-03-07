@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Physics</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <canvas class="webgl"></canvas>
+
+  <div id="modal_settings" class="modal">
+    <div id="dialog_settings">
+      <label id="label_settings">Settings</label>
+
+      <div id="div_buttons" class="container_buttons">
+        <img id="icon_fullscreen" src="/media/dev/images/fullscreen.png" title="Fullscreen" alt="Fullscreen">
+        <img id="icon_sound" src="/media/dev/images/sound-off.png" title="Sound ON/OFF" alt="Sound ON/OFF">
+        <img id="icon_scene" src="/media/dev/images/scene.png" title="Change Background" alt="Change Background">
+        <img id="icon_hourglass" src="/media/dev/images/hourglass.png" title="Automatic Coin Drop ON/OFF" alt="Automatic Coin Drop ON/OFF">
+        <img id="icon_gyro" src="/media/dev/images/gyro.png" title="Gyroscope ON/OFF" alt="Gyroscope ON/OFF">
+        <img id="icon_qrcode" src="/media/dev/images/qr-code.png" title="QR Code" alt="QR Code">
+      </div>
+
+      <div id="div_coin_select">
+        <img id="image_coin_select" src="/media/dev/images/select/bitcoin.png">
+
+        <div id="div_select_buttons">
+          <img id="icon_left" src="/media/dev/images/page.png">
+          <img id="icon_select" src="/media/dev/images/select.png">
+          <img id="icon_right" src="/media/dev/images/page.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_qr_code" class="modal">
+    <img id="image_qr_code" src="/media/dev/images/qr-code-pxlmesh.png">
+  </div>
+
+  <div id="modal_copyright" class="modal">
+    <div id="dialog_copyright">
+      <label id="label_copyright">Copyright Info</label>
+
+      <div class="dialog_container">
+        <div class="copyright_subcontainer">
+          <h1>3D Models</h1>
+          <label id="credits_mario"></label>
+          <label id="credits_bitcoin"></label>
+          <label id="credits_dogecoin"></label>
+          <label id="credits_ethereum"></label>
+        </div>
+        <div class="copyright_subcontainer">
+          <h1>HDRI Environments</h1>
+          <label id="hdri_chinese"></label>
+        </div>
+        <div class="copyright_subcontainer">
+          <h1>2D Backgrounds</h1>
+          <label id="digital_blue"></label>
+        </div>
+        <div class="copyright_subcontainer">
+          <h1>Sounds</h1>
+          <label id="kenney_sounds"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_info" class="modal">
+    <div id="dialog_info">
+      <label id="label_info">Project Details</label>
+
+      <div class="dialog_container">
+        <div class="info_subcontainer">
+          <h1>Three.js Portfolio Demo</h1>
+
+          <div class="info_inner_block">
+            <label>This is a portfolio experiment of my three.js skills learned on the "three.js journey" course by Bruno Simon and also showcases some of my 3d models made in Blender.</label>
+            <label><a href="https://threejs-journey.com/" target="_blank">https://threejs-journey.com/</a></label>
+          </div>
+
+          <div class="info_inner_block">
+            <label>Use the built-in three.js orbit controls to manipulate the scene's camera view. Rotate the scene, zoom in/out, and pan around the scene.</label>
+            <label>Click the gear icon to open the settings menu to select different coins/backgrounds and other options.</label>
+            <label>Open the QR code link on your mobile device and check out the gyro-controlled scene rotation on your mobile device -- unavailable on Safari or Firefox.</label>
+            <label>If you have a Windows PC, you can make this web page a custom "live wallpaper" using <a href="https://rocksdanister.github.io/lively/" target="_blank">Lively Wallpaper</a>. Make sure to add the "wallpaper" URL parameter to enable live wallpaper mode (removes the UI elements).</label>
+          </div>
+          <div class="info_inner_block">
+            <label>URL Options:</label>
+            <label>"wallpaper" - wallpaper mode, no UI</label>
+            <label>"coin=mario|bitcoin|ethereum|dogcoin" - use selected coin</label>
+            <label>ex. <a href="https://www.pxlmesh.com/dev/three-js/physics/index.html?wallpaper&coin=mario" target="_blank">index.html?wallpaper&coin=mario</a></label>
+          </div>
+
+          <div id="info_final_inner_block">
+            <label>Thanks for checking out this portfolio demo!<br>Any feedback is appreciated.</label>
+            <label>
+              web: <a href="https://www.pxlmesh.com" target="_blank">pxlmesh.com</a><br>
+              e-mail: <a href="mailto:info@pxlmesh.com" target="_blank">info@pxlmesh.com</a><br>
+              Reddit: <a href="https://www.reddit.com/user/pxlmesh" target="_blank">u/PXLmesh</a><br>
+              <a href="https://sketchfab.com/pxlmesh" target="_blank">Sketchfab 3D Models</a><br>
+              <a href="https://play.google.com/store/apps/dev?id=7623722857728643207" target="_blank">Google Play Apps</a>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="div_page_buttons">
+    <img id="icon_info" src="/media/dev/images/info.png" title="Project Details" alt="Project Details" class="button_small_size">
+    <img id="icon_gear" src="/media/dev/images/gear.png" title="Settings" alt="Settings" class="button_standard_size">
+    <img id="icon_copyright" src="/media/dev/images/copyright.png" title="Copyright Info" alt="Copyright Info" class="button_small_size">
+  </div>
+
+  <img id="icon_logo" src="/media/dev/images/logo.png" alt="PXLmesh">
+
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>
